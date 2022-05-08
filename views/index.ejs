@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layout/header'); -%>
+  <body>
+  
+    <%- include('layout/navbar'); -%>
+
+    <img src="assets/images/doctorlogo.png" id="opening" />
+    <div id="openingparagraph">
+      Welcome to Medicus.com, the premiere site online doctor consultations.
+      Here, you will find caring physicians who will helpe you learn about your
+      condition no matter where in the world you live.
+    </div>
+
+    <div class="introbox">
+      <img src="assets/images/Maria.jpg" id="Maria" />
+
+      <br /><br />
+
+      <div id="history">
+        I am Maria Ceban, I have been practicing medicine for many years. My
+        practice began in Moldova, but I later moved to the United States to
+        have a better life. In my years, I have seen many people who struggle to
+        go to the doctors, because they are poor, busy, or isolated. That's why
+        I have created Medicus, to assemble to team of specialists to help the
+        sick throughout the world. It's been 5 years, and it is truly both
+        helpful and fulfilling. If you are feeling unwell, don't hesitate to
+        come to me and my team.
+      </div>
+    </div>
+
+    <div id="testimonialwrap">
+      <div id="testimonialtitle">Our Testimonials</div>
+      <div>These doctors have been life saving. - Herman Cortez</div>
+      <div>The doctors have been very kind and patient. - Maria Schaffer</div>
+      <div>10/10 stars. - Guy Jones</div>
+    </div>
+
+    <button id="signupnow" onclick="window.location.href='newuser.html'">
+      Sign up now!
+    </button>
+    <%- include('layout/footer'); -%>
+   
+
+  </body>
+  <%- include('layout/scripts'); -%>
+</html>

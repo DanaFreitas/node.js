@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><%- include('layout/header'); -%>
+
+<body>
+  <%- include('layout/navbar'); -%>
+ 
+
+      <div class="title">Sign up</div>
+
+      <div class="contactbox">
+        <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <input type="text" id="username" name="username" class="inputitem" placeholder="Username"><br>
+            <input type="text" id="password" name="password" class="inputitem" placeholder="Password"><br>
+
+
+            <input type="text" id="address" name="address" class="inputitem" placeholder="Address"><br>
+            <input type="number" id="creditcard" name="creditcard" class="inputitem" placeholder="Credit Card Number"><br>
+            <div id="cc">
+            <input type="number" id="cvv" name="cvv" class="inputcc" placeholder="cvv"><br>
+            <input type="number" id="expdate" name="expdate" class="inputcc" placeholder="Expiration Date"><br>
+              </div>
+
+
+
+            <input type="submit" value="Sign Up" class="submit" name="submit" class="inputitem"> </input>
+        </form>
+    </div>
+
+
+    <div id="price">The standard price is $40 per consultation.</div>
+
+       <%- include('layout/footer'); -%>
+
+    
+</body>  <%- include('layout/scripts'); -%>
+
+</html>

@@ -1,0 +1,23 @@
+<div id="topbar">
+  <input
+    type="image"
+    src="assets/images/doctorlogo.png"
+    class="logo"
+    onclick="window.location.href='/'"
+  />
+
+  <button class="section" onclick="window.location.href='/'">Home</button>
+  
+
+  <% if(loggedIn) { %>
+
+  <button class="section" onclick="window.location.href='/form'">Ask</button>
+  <button class="section" onclick="window.location.href='/auth/logout'">Log out</button>
+
+
+  <% } %> <% if(!loggedIn) { %>
+  <button class="section" onclick="window.location.href='/login'">Log in</button>
+  <button class="section" onclick="window.location.href='/newuser'">New User</button>
+
+  <% } %>
+</div>

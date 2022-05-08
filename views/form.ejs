@@ -1,0 +1,69 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/final.css">
+</head> --><!DOCTYPE html>
+<html lang="en">
+<%- include('layout/header'); -%>
+
+<body>
+  <%- include('layout/navbar'); -%>
+
+  <!--  <div id="topbar">
+        <input type="image"  src="assets/images/doctorlogo.png"
+          class="logo"
+          onclick="window.location.href='index.html'"
+        />
+        <button class="section" onclick="window.location.href='index.html'">
+          Home
+        </button>
+        <button class="section" onclick="window.location.href='form.html'">
+          Ask
+        </button>
+        <button class="section" onclick="window.location.href='login.html'">
+          Login
+        </button>
+        <button class="section" onclick="window.location.href='newuser.html'">
+          New User
+        </button>
+      </div>-->
+
+
+      <div class="title">What's the problem?</div>
+
+
+      <div class="contactbox">
+        <form action="/form/store" method="POST" id="contactform" enctype="multipart/form-data">
+            <input type="text" id="formname" name="formname" class="inputitem" placeholder="name"><br>
+            <input type="text" id="subject" name="subject" class="inputitem" placeholder="subject"><br>
+
+            <input type="email" id="email" name="email" class="inputitem" placeholder="email address"><br>
+            <textarea id="body" name="body" placeholder="Tell me your issue here." class="inputitem"></textarea><br>
+            <script> $('#body').summernote({placeholder: 'Hello bootstrap 4', tabsize:2,height:200, width:450});</script>
+           
+            <input type="file" class="file" id="image" name="image"><br>
+
+
+            <button type="submit" value="Submit" class="submit" name="submit"> Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+      <!--<div id="footer">
+        To contact for other issues: 15 Cherry Street Hootville Kansas.
+        123-456-7890
+      </div>-->
+      <%- include('layout/footer'); -%>
+      <%- include('layout/header'); -%>
+
+</body>
+<!--<script src="final.js"></script>-->  <!--<%- include('layout/scripts'); -%>-->
+
+</html>
